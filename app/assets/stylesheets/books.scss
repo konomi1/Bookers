@@ -16,7 +16,7 @@ p {
   font-size: 13px;
 }
 
-// table
+// index-table
 table {
   font-size: 13px;
 }
@@ -29,7 +29,7 @@ td {
   padding: 1px 5px 7px 5px;
 }
 
-// form
+// index,edit-form
 .field {
   margin-bottom: 10px;
 }
@@ -69,4 +69,32 @@ td > a:hover {
 .link-botan > a:visited,
 td > a:visited {
   color: #000000;
+}
+
+// error
+.error-box {
+  height: 134px;
+  width: 468px;
+  border:solid 2px red ;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.error-heading {
+  font-size: 12px;
+  background-color: #c00;
+  color: #fff;
+  padding: 5px 15px;
+  margin: 0;
+}
+
+.error-message {
+  margin: 33px;
+  padding-left: 40px;
+  line-height: 18px;
+}
+
+li {
+  list-style: square;
 }
