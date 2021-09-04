@@ -12,9 +12,9 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.body %></td>
-        <td><%= link_to "show", book_path(book) %></td>
-        <td><%= link_to "edit", edit_book_path(book) %></td>
-        <td><%= link_to "destroy", book_path(book), method: :delete, "data-confirm" => "Are you sure?" %></td>
+        <td><%= link_to "Show", book_path(book) %></td>
+        <td><%= link_to "Edit", edit_book_path(book) %></td>
+        <td><%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "Are you sure?" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,10 +31,18 @@
 
 <div class=format >
   <%= form_with model:@book, local:true do |f| %>
-    <p>Title</p>
-    <%= f.text_field :title %>
-    <p>Body</p>
-    <%= f.text_area :body %>
-    <%= f.submit "Create Book"%>
+
+    <div class=field>
+      <p class=title>Title</p>
+      <%= f.text_field :title %>
+    </div>
+    <div class=field>
+      <p class=title>Body</p>
+      <%= f.text_area :body %>
+    </div>
+    <div class=field>
+      <%= f.submit "Create Book"%>
+    </div>
+
   <% end %>
 </div>
