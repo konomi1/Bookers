@@ -8,15 +8,20 @@
 <% end %>
 
 <%= form_with model:@book, local: true do |f| %>
+  <div class=field>
+    <p class=title>Title</p>
+    <%= f.text_field :title %>
+  </div>
 
-  <p>Title</p>
-  <%= f.text_field :title %>
+  <div class=field>
+    <p class=title>Body</p>
+    <%= f.text_area :body %>
+  </div>
 
-  <p>Body</p>
-  <%= f.text_area :body %>
-
+  <div class=field>
   <%= f.submit "Update Book"%>
+  </div>
 
 <% end %>
 
-<%= link_to "show", book_path(@book.id) %>|<%= link_to "Back", books_path %>
+<p class=link-botan><%= link_to "show", book_path(@book.id) %> | <%= link_to "Back", books_path %></p>

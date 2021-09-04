@@ -22,4 +22,11 @@
 
 body {
   margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.flash {
+  color: #008000;
+  font-size: 13px;
+  margin: 33px;
 }
