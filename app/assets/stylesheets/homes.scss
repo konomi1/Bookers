@@ -13,3 +13,12 @@ main {
 p {
     margin: 33px;
 }
+
+p > a {
+  color: #666666;
+}
+
+p > a:hover {
+  background-color: black;
+  color: white;
+}
